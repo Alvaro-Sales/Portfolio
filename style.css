@@ -92,7 +92,7 @@ body{
     margin-left: 25px;
     max-width: 350px;
     color: white;
-    text-align: Center;
+    text-align: justify;
     font-weight: bold;
 }
 #info .txt-info h2{
@@ -238,7 +238,7 @@ footer p{
     }
     #info .txt-info{
         margin: auto;
-        text-align: justify;
+        text-align: center;
     }
     .trabalhos .cards {
     display: block;
