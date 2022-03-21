@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;1,300;1,400&family=Roboto:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    cursor: default;
+    background: #272727;
+    font-family: 'Raleway', sans-serif;
+}
+.text-animation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    justify-content: center;
+}
+.text-animation li{
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 400;
+    color: #484848;
+    animation: ligth 1.4s linear infinite;
+}
+@keyframes ligth{
+    0%{
+        color: #484848;
+        text-shadow: none;
+    }
+    50%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff900;
+        text-shadow: 0 0 7px #fff900, 0 0 50px #fff900;
+    }
+}
+.text-animation li:nth-child(1){
+    animation-delay: 0;
+}
+.text-animation li:nth-child(2){
+    animation-delay: 0.1s;
+}
+.text-animation li:nth-child(3){
+    animation-delay: 0.2s;
+}
+.text-animation li:nth-child(4){
+    animation-delay: 0.3s;
+}
+.text-animation li:nth-child(5){
+    animation-delay: 0.4s;
+}
+.text-animation li:nth-child(6){
+    animation-delay: 0.5s;
+}
+.text-animation li:nth-child(7){
+    animation-delay: 0.6s;
+}
+.text-animation li:nth-child(8){
+    animation-delay: 0.7s;
+}
+.text-animation li:nth-child(9){
+    animation-delay: 0.8s;
+}
+.txt-ani{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+#info{
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    background-color: rgba(72, 72, 72, .8);
+    font-family: 'Roboto', sans-serif;
+}
+#info .minha-foto img{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
+#info .txt-info{
+    margin-left: 25px;
+    max-width: 350px;
+    color: white;
+    text-align: justify;
+    font-weight: bold;
+}
+#info .txt-info h2{
+    margin-bottom: 10px;
+    color: #fff900;
+}
+.trabalhos .title-pg{
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Kalam', cursive;
+}
+.trabalhos .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trabalhos .card-1{
+    margin: auto;
+    margin-top: 40px;
+    margin-right: 10px;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-image: url(./imagem/screen.jpg);
+}
+.trabalhos .card-1:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+.trabalhos .card-1 .txt-card{
+    display: none;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 1.3em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px 10px;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Kalam', cursive;
+    color: white;
+}
+.trabalhos .card-1 .txt-card button{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 30px;
+    padding: 5px 0px;
+    transition: 0.5s;
+}
+.trabalhos .card-1 .txt-card button:hover{
+    background-color: black;
+}
+.trabalhos .card-1 .txt-card button a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+.trabalhos .card-1 .txt-card button a:hover{
+    color: #ffffff;
+}
+.trabalhos .card-1:hover .txt-card{
+    display: flex;
+}
+.trabalhos .card-2{
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    background-image: url(./imagem/la-pizzaria.jpg);
+}
+.trabalhos .card-2:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+.trabalhos .card-2 .txt-card-2{
+    display: none;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 1.3em;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0px 10px;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Kalam', cursive;
+    color: white;
+}
+.trabalhos .card-2 .txt-card-2 button{
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 30px;
+    padding: 5px 0px;
+    transition: 0.5s;
+}
+.trabalhos .card-2 .txt-card-2 button:hover{
+    background-color: black;
+}
+.trabalhos .card-2 .txt-card-2 button a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    font-weight: bold;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+}
+.trabalhos .card-2 .txt-card-2 button a:hover{
+    color: #ffffff;
+}
+.trabalhos .card-2:hover .txt-card-2{
+    display: flex;
+}
+footer p{
+    margin-top: 10%;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 5px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px){
+    #info{
+    display: block;
+    margin: auto;
+    padding: 20px 0px;
+    letter-spacing: 2px;
+    background-color: rgba(72, 72, 72, .8);
+    font-family: 'Roboto', sans-serif;
+    }
+    #info .minha-foto img{
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #info .txt-info{
+        margin: auto;
+        text-align: justify;
+    }
+    .trabalhos .cards {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    }
+    .trabalhos .cards .card-1{
+        display: block;
+        margin: auto;
+    }
+    .trabalhos .cards .card-2{
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
