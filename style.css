@@ -175,7 +175,7 @@ body{
     font-weight: bold;
     text-align: center;
 }
-.trabalhos .title-pg{
+.trabalhos .title{
     color: #0080ff;
     text-align: center;
     margin-top: 30px;
@@ -290,10 +290,13 @@ body{
 .trabalhos .card-2:hover .txt-card-2{
     display: flex;
 }
-.footer{
+footer{
+    display: block;
+    background-color: black;
     margin-top: 10%;
-    padding: 20px 50px;
-    padding-bottom: 5%;
+}
+.footer{
+    padding: 20px 100px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -301,17 +304,12 @@ body{
     box-sizing: border-box;
     justify-content: space-between;
 }
-.footer p{
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
 .footer .social{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-right: 50px;
 }
 .footer .social h3{
     color: white;
@@ -329,15 +327,40 @@ body{
     width: 36px;
     height: 36px;
 }
+.footer .contato{
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.footer .contato h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .contato p{
+    color: white;
+    margin: 10px 0px;
+    font-weight: bold;
+}
+footer .direitos{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    font-weight: bold;
+}
 
 
-@media screen and (max-width: 600px){
+
+@media screen and (max-width: 700px){
     #info{
-    display: block;
-    margin: auto;
-    padding: 20px 0px;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
+        display: block;
+        margin: auto;
+        padding: 20px 0px 0px 0px;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
     }
     #info .minha-foto img{
         display: block;
@@ -348,10 +371,28 @@ body{
         margin: auto;
         text-align: center;
     }
+    .tec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tec .card-01, .card-02, .card-03{
+        margin: auto;
+        margin-top: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 15px;
+        width: 250px;
+        height: 350px;
+    }
+    .trabalhos .title{
+        margin-bottom: 10px;
+    }
     .trabalhos .cards {
-    display: block;
-    align-items: center;
-    justify-content: center;
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
     .trabalhos .cards .card-1{
         display: block;
@@ -361,5 +402,20 @@ body{
         display: block;
         margin: auto;
         margin-top: 20px;
+    }
+    .footer{
+        display: flex;
+        padding: 20px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .footer .social{
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .footer .contato{
+        margin-left: 0px;
     }
 }
