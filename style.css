@@ -8,8 +8,7 @@
 }
 body{
     cursor: default;
-    background: #272727;
-    font-family: 'Raleway', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .text-animation{
     list-style: none;
@@ -22,21 +21,21 @@ body{
     margin-top: 40px;
     font-size: 50px;
     font-weight: 400;
-    color: #484848;
+    color: #808080;
     animation: ligth 1.4s linear infinite;
 }
 @keyframes ligth{
     0%{
-        color: #484848;
+        color: #808080;
         text-shadow: none;
     }
     50%{
-        color: #484848;
+        color: #808080;
         text-shadow: none;
     }
     100%{
-        color: #fff900;
-        text-shadow: 0 0 7px #fff900, 0 0 50px #fff900;
+        color: #0080ff;
+        text-shadow: 0 0 7px #0080ff, 0 0 50px #0080ff;
     }
 }
 .text-animation li:nth-child(1){
@@ -69,20 +68,20 @@ body{
 .txt-ani{
     margin-top: -15px;
     margin-bottom: 20px;
-    color: #fff;
+    color: #222222;
     text-align: center;
     justify-content: center;
 }
 #info{
     display: flex;
     align-items: center;
+    justify-content: center;
     letter-spacing: 2px;
-    background-color: rgba(72, 72, 72, .8);
-    font-family: 'Roboto', sans-serif;
+    max-width: 90vw;
 }
 #info .minha-foto img{
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     width: 200px;
     height:200px;
@@ -90,17 +89,94 @@ body{
 }
 #info .txt-info{
     margin-left: 25px;
-    max-width: 350px;
-    color: white;
-    text-align: justify;
     font-weight: bold;
 }
 #info .txt-info h2{
     margin-bottom: 10px;
-    color: #fff900;
+    color: #0080ff;
+}
+.tec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+.tec .card-01, .card-02, .card-03{
+    box-shadow: 0px 12px 24px #242d4930;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    cursor: default;
+    letter-spacing: .5px;
+    transition: transform 0.5s, margin 0.5s;
+}
+.tec .card-01:hover{
+    border: 1px solid #0080ff;
+    transform: scale(1.1);
+}
+.tec .card-01 img{
+    width: 80px;
+    height: 80px;
+}
+.tec .card-01 h2{
+    color: #0080ff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tec .card-01 p{
+    font-weight: bold;
+    text-align: center;
+}
+.tec .card-02:hover{
+    border: 1px solid #0080ff;
+    transform: scale(1.1);
+}
+.tec .card-02 img{
+    width: 80px;
+    height: 80px;
+}
+.tec .card-02 h2{
+    color: #0080ff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tec .card-02 p{
+    font-weight: bold;
+    text-align: center;
+}
+.tec .card-03:hover{
+    border: 1px solid #0080ff;
+    transform: scale(1.1);
+}
+.tec .card-03 img{
+    width: 80px;
+    height: 80px;
+}
+.tec .card-03 h2{
+    color: #0080ff;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.tec .card-03 p{
+    font-weight: bold;
+    text-align: center;
 }
 .trabalhos .title-pg{
-    color: white;
+    color: #0080ff;
     text-align: center;
     margin-top: 30px;
     font-family: 'Kalam', cursive;
@@ -112,7 +188,7 @@ body{
 }
 .trabalhos .card-1{
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 10px;
     width: 300px;
     height: 500px;
@@ -138,13 +214,14 @@ body{
 }
 .trabalhos .card-1 .txt-card button{
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     margin-top: 30px;
     padding: 5px 0px;
     transition: 0.5s;
 }
 .trabalhos .card-1 .txt-card button:hover{
-    background-color: black;
+    background-color: #000;
+    border: 2px solid #000;
 }
 .trabalhos .card-1 .txt-card button a{
     color: white;
@@ -156,14 +233,14 @@ body{
     transition: 0.5s;
 }
 .trabalhos .card-1 .txt-card button a:hover{
-    color: #ffffff;
+    color: #0080ff;
 }
 .trabalhos .card-1:hover .txt-card{
     display: flex;
 }
 .trabalhos .card-2{
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-left: 10px;
     width: 300px;
     height: 500px;
@@ -189,13 +266,14 @@ body{
 }
 .trabalhos .card-2 .txt-card-2 button{
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid #ffffff;
     margin-top: 30px;
     padding: 5px 0px;
     transition: 0.5s;
 }
 .trabalhos .card-2 .txt-card-2 button:hover{
-    background-color: black;
+    background-color: #000;
+    border: 2px solid #000;
 }
 .trabalhos .card-2 .txt-card-2 button a{
     color: white;
@@ -207,20 +285,51 @@ body{
     transition: 0.5s;
 }
 .trabalhos .card-2 .txt-card-2 button a:hover{
-    color: #ffffff;
+    color: #0080ff;
 }
 .trabalhos .card-2:hover .txt-card-2{
     display: flex;
 }
-footer p{
+.footer{
     margin-top: 10%;
+    padding: 20px 50px;
+    padding-bottom: 5%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.footer p{
     text-align: center;
     color: white;
-    background-color: black;
-    padding: 5px 0px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
+.footer .social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .social h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer .social .redes{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0% 15%;
+    width: 100%;
+}
+.footer .social .redes a img{
+    width: 36px;
+    height: 36px;
+}
+
 
 @media screen and (max-width: 600px){
     #info{
@@ -228,7 +337,6 @@ footer p{
     margin: auto;
     padding: 20px 0px;
     letter-spacing: 2px;
-    background-color: rgba(72, 72, 72, .8);
     font-family: 'Roboto', sans-serif;
     }
     #info .minha-foto img{
