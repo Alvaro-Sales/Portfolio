@@ -181,24 +181,23 @@ body{
     margin-top: 30px;
     font-family: 'Kalam', cursive;
 }
-.trabalhos .cards {
+.trabalhos .cards-1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .trabalhos .card-1{
-    margin: auto;
     margin-top: 20px;
     margin-right: 10px;
     width: 300px;
     height: 500px;
     border-radius: 20px;
-    background-image: url(./imagem/screen.jpg);
+    background-image: url(./imagem/la-pizzaria.jpg);
 }
 .trabalhos .card-1:hover{
     background-color: rgba(0, 0, 0, .5);
 }
-.trabalhos .card-1 .txt-card{
+.trabalhos .card-1 .txt-card-1{
     display: none;
     height: 100%;
     border-radius: 20px;
@@ -212,18 +211,18 @@ body{
     font-family: 'Kalam', cursive;
     color: white;
 }
-.trabalhos .card-1 .txt-card button{
+.trabalhos .card-1 .txt-card-1 button{
     background-color: transparent;
     border: 2px solid #ffffff;
     margin-top: 30px;
     padding: 5px 0px;
     transition: 0.5s;
 }
-.trabalhos .card-1 .txt-card button:hover{
+.trabalhos .card-1 .txt-card-1 button:hover{
     background-color: #000;
     border: 2px solid #000;
 }
-.trabalhos .card-1 .txt-card button a{
+.trabalhos .card-1 .txt-card-1 button a{
     color: white;
     text-decoration: none;
     padding: 5px 30px;
@@ -232,20 +231,19 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.5s;
 }
-.trabalhos .card-1 .txt-card button a:hover{
+.trabalhos .card-1 .txt-card-1 button a:hover{
     color: #0080ff;
 }
-.trabalhos .card-1:hover .txt-card{
+.trabalhos .card-1:hover .txt-card-1{
     display: flex;
 }
 .trabalhos .card-2{
-    margin: auto;
-    margin-top: 20px;
     margin-left: 10px;
+    margin-top: 20px;
     width: 300px;
     height: 500px;
     border-radius: 20px;
-    background-image: url(./imagem/la-pizzaria.jpg);
+    background-image: url(./imagem/pet-vita.jpg);
 }
 .trabalhos .card-2:hover{
     background-color: rgba(0, 0, 0, .5);
@@ -383,22 +381,22 @@ footer .direitos{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 15px;
-        width: 300px;
-        height: 400px;
+        width: 250px;
+        height: 350px;
     }
     .trabalhos .title{
         margin-bottom: 10px;
     }
-    .trabalhos .cards {
+    .trabalhos .cards-1 {
         display: block;
         align-items: center;
         justify-content: center;
     }
-    .trabalhos .cards .card-1{
+    .trabalhos .cards-1 .card-1{
         display: block;
         margin: auto;
     }
-    .trabalhos .cards .card-2{
+    .trabalhos .cards-1 .card-2{
         display: block;
         margin: auto;
         margin-top: 20px;
