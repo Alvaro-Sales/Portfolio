@@ -448,6 +448,7 @@ main {
     width: 100%;
     max-width: 1500px;
     height: auto;
+    box-sizing: border-box;
     padding: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -460,6 +461,7 @@ main {
     height: 250px;
     margin: 20px;
     padding: 20px 15px;
+    box-sizing: border-box;
     border-radius: 20px;
     align-items: flex-start;
     justify-content: flex-start;
@@ -2388,6 +2390,106 @@ footer .copy {
         align-items: center;
         justify-content: center;
         padding: 30px 30px 15px 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .containerTools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    
+    .titleTools {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 35px;
+        color: var(--cor-2);
+        font-family: 'Merienda', cursive;
+    }
+    
+    .tools {
+        width: 100%;
+        max-width: 1500px;
+        height: auto;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tools .cardTools {
+        width: 250px;
+        height: 250px;
+        margin: 20px;
+        padding: 20px 15px;
+        border-radius: 20px;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .tools .cardTools img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 20px;
+    }
+    
+    .tools .cardTools .imgJS {
+        border-radius: 10px;
+    }
+    
+    .tools .cardTools h1 {
+        color: var(--cor-1);
+        font-size: 22px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+    
+    .tools .cardTools p {
+        color: var(--cor-1);
+        text-align: justify;
+        letter-spacing: 1.5px;
+    }
+    
+    .toolCss {
+        background-image: linear-gradient(-45deg, #0080ff 20%, #0056ac);
+    }
+    
+    .toolHtml {
+        background-image: linear-gradient(-45deg, #ff5100 20%, #ff7300);
+    }
+    
+    .toolJavascript {
+        background-image: linear-gradient(-45deg, #ffff00cb 40%, #fffb00cc);
+    }
+    
+    .toolMysql {
+        background-image: linear-gradient(-45deg, #00758F 20%, #00758fa4);
+    }
+    
+    .toolMysql {
+        background-image: linear-gradient(-45deg, #00758F 20%, #00758fa4);
+    }
+    
+    .toolPython {
+        background-image: linear-gradient(-45deg, #ffd43b  10%, #306998);
+    }
+    
+    .toolGithub {
+        background-image: linear-gradient(-45deg, #181818 20%, #000000);
+    }
+    
+    .toolVScode {
+        background-image: linear-gradient(-45deg, #0080ff 10%, #000000);
+    }
+    
+    .toolPhotoshop {
+        background-image: linear-gradient(-45deg, #003163 10%, #001d3a);
     }
 }
 
