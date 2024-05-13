@@ -44,8 +44,3 @@ const mobileNavbar = new MobileNavbar(
 );
 
 mobileNavbar.init();
-
-
-// Duplicando a div com imagens do slide
-let copy = document.querySelector(".tools-slide").cloneNode(true)
-document.querySelector('.tools').appendChild(copy)

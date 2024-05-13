@@ -436,15 +436,6 @@ main {
     margin: 20px 0;
 }
 
-@keyframes slideTools {
-    from{
-        transform: translateX(0);
-    }
-    to{
-        transform: translateX(-100%);
-    }
-}
-
 .titleTools {
     text-align: center;
     margin: 20px 0;
@@ -455,46 +446,82 @@ main {
 
 .tools {
     width: 100%;
+    max-width: 1500px;
     height: auto;
-    overflow: hidden;
-    padding: 40px 0;
-    background-color: rgba(26, 26, 26, 0.7);
-    white-space: nowrap;
-    position: relative;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.tools::before,
-.tools::after {
-    z-index: 2;
-    top: 0;
-    position: absolute;
-    content: '';
+.tools .cardTools {
     width: 250px;
-    height: 100%;
+    height: 250px;
+    margin: 20px;
+    padding: 20px 15px;
+    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.tools::before {
-    left: 0;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--cor-3));
+.tools .cardTools img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
 }
 
-.tools::after {
-    right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--cor-3));
+.tools .cardTools .imgJS {
+    border-radius: 10px;
 }
 
-.tools:hover .tools-slide {
-    animation-play-state: paused;
+.tools .cardTools h1 {
+    color: var(--cor-1);
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-.tools-slide {
-    display: inline-block;
-    animation: 25s slideTools infinite linear;
+.tools .cardTools p {
+    color: var(--cor-1);
+    text-align: justify;
+    letter-spacing: 1.5px;
 }
 
-.tools-slide img {
-    height: 80px;
-    padding: 0 20px;
+.toolCss {
+    background-image: linear-gradient(-45deg, #0080ff 20%, #0056ac);
+}
+
+.toolHtml {
+    background-image: linear-gradient(-45deg, #ff5100 20%, #ff7300);
+}
+
+.toolJavascript {
+    background-image: linear-gradient(-45deg, #ffff00cb 40%, #fffb00cc);
+}
+
+.toolMysql {
+    background-image: linear-gradient(-45deg, #00758F 20%, #00758fa4);
+}
+
+.toolMysql {
+    background-image: linear-gradient(-45deg, #00758F 20%, #00758fa4);
+}
+
+.toolPython {
+    background-image: linear-gradient(-45deg, #ffd43b  10%, #306998);
+}
+
+.toolGithub {
+    background-image: linear-gradient(-45deg, #181818 20%, #000000);
+}
+
+.toolVScode {
+    background-image: linear-gradient(-45deg, #0080ff 10%, #000000);
+}
+
+.toolPhotoshop {
+    background-image: linear-gradient(-45deg, #003163 10%, #001d3a);
 }
 
 .trabalhos {
