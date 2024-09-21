@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --blue: #0080ff;
+	--black: #222222;
+	--black-2: #303030;
+	--black-3: #000000;
+	--green: #00df5d;
+	--white: #ffffff;
+}
+
+html {
+    max-height: 100%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+	background-color: var(--black);
+    color: var(--white);
+}
+
+.vidro {
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 10px 20px -5px rgba(255, 255, 255, 0.3);
+}
+
+.sobreMim .foto img {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s ease;
+    animation: fade 1s ease-in-out;
+}
+  
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sobreMim .part1 h1 {
+    position: relative;
+    transform-origin: left;
+    display: inline-block;
+    transition: all 0.5s ease;
+    animation: fadeText 1s ease-in-out;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.sobreMim .part1 h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    background: var(--blue);
+    transform-origin: right;
+    transition: 0.5s;
+}
+
+.sobreMim .part1 h1::before, .sobreMim .part1 h2::before, .sobreMim .part2 h2::before {
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+.sobreMim .part1 h2, .sobreMim .part2 h2 {
+    transform: scaleX(1);
+    position: relative;
+    transform-origin: right;
+    display: inline-block;
+    transition: all 0.5s ease;
+    animation: fadeText 1s ease-in-out;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.sobreMim .part1 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 410px;
+    height: 100%;
+    background: var(--white);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.sobreMim .part2 h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 510px;
+    height: 100%;
+    background: var(--white);
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.sobreMim p {
+    opacity: 1;
+    transition-delay: 1s;
+    animation: fadeText2 2s ease-in-out;
+}
+
+@keyframes fadeText2 {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+.links .btn1 a {
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    transform: translateX(0);
+    transition-delay: transform 1s;
+    animation: fadeBtn 1s ease-in-out;
+}
+
+@keyframes fadeBtn {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.social a {
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    transform: translateX(0);
+    transition: transform 1s ease;
+    animation: fadeBtn 1s ease-in-out;
+}
+
+
+/* Estilo da página Projetos */
+.CardFade {
+    animation: cardFade 1s ease-in-out;
+}
+
+@keyframes cardFade {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+/* Estilo da página skills */
+.titleSection {
+    transition: all 0.5s ease-in-out;
+    animation: title 1s ease-in-out;
+}
+  
+@keyframes title {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.cardAnimation {
+    transition: all 0.5s ease-in-out;
+    animation: card 1.5s ease-in-out;
+  }
+  
+@keyframes card {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
