@@ -34,6 +34,24 @@ export default function Projetos() {
                 <ProjetosCard 
                     imagem={
                         <Image 
+                            src='/images/metabusiness.png'
+                            alt=""
+                            width={890}
+                            height={500}
+                            priority={true}
+                            quality={100}
+                            className="imgCardProje"
+                        />
+                    }
+                    title={'Agência MetaBusiness'}
+                    description={'Website no qual o cliente pode ver os serviços prestados pela agência MetaBusiness, isso ajudou na captação de clientes e deu mais visibilidade para a empresa.'}
+                    link="https://metaa-business.vercel.app/"
+                />
+
+                {/* --------------------------- Card 3 --------------------------- */}
+                <ProjetosCard 
+                    imagem={
+                        <Image 
                             src='/images/DonutsMini.png'
                             alt="Imagem de um website que vende donuts"
                             width={890}
@@ -48,7 +66,7 @@ export default function Projetos() {
                     link="https://alvaro-sales.github.io/Donuts_Mini"
                 />
 
-                {/* --------------------------- Card 3 --------------------------- */}
+                {/* --------------------------- Card 4 --------------------------- */}
                 <ProjetosCard 
                     imagem={
                         <Image 

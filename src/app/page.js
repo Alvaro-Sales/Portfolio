@@ -36,13 +36,13 @@ export default function Home() {
 
 							<p className="text-justify">Você pode entrar em contato atravez do meu telefone ou Email.</p>
 
-							<p className="text-justify">Telefone: (82) 993263814</p>
+							<p className="text-justify">Telefone: (82) 99326-3814</p>
 							 
 							<p className="text-justify">Email: contato.alvarosales@gmail.com</p>
 
 							<div className="links flex items-center justify-start mt-5">
 								<button className="btn1 border-none font-bold tracking-wider rounded-md bg-transparent mr-8">
-									<Link href="/projetos" className="text-[var(--white)] py-2 px-5 rounded-md transition-all duration-500 bg-transparent border-2 border-[var(--white)] hover:bg-[var(--blue)] hover:border-2 hover:border-transparent">Ver mais</Link>
+									<Link href="/projetos" className="text-[var(--white)] py-2 px-5 rounded-md transition-all duration-500 bg-transparent border-2 border-[var(--white)] hover:bg-[var(--blue)] hover:border-2 hover:border-transparent">Ver projetos</Link>
 								</button>
 
 								<div className="social flex items-center gap-3">
